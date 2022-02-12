@@ -13,15 +13,7 @@ type TransitionStage = 'none' | 'right' | 'center' | 'left';
 const MemoPage: FC<Props> = ({ children, lastAction, index, length }) => {
   const [transitionStage, setTransitionStage] = useState<TransitionStage>('right');
 
-  // if (index === length - 1) {
-  //   console.log(lastAction, transitionStage);
-  // }
-
   useEffect(() => {
-    // if (index === length - 1) {
-    //   console.log('effec');
-    // }
-
     if (lastAction === 'push') {
       if (transitionStage === 'right') {
         setTransitionStage('center');
@@ -31,8 +23,6 @@ const MemoPage: FC<Props> = ({ children, lastAction, index, length }) => {
         setTransitionStage('none');
       }
     } else if (lastAction === 'replace') {
-      // 나머지 페이지들 애니메이션 정의해줘야 함.
-      // 현재는 이전페이지가 왼쪽으로 이동하지 않음.
       if (transitionStage === 'right') {
         setTransitionStage('center');
       }

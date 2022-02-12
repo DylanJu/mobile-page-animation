@@ -37,8 +37,8 @@ class MemoLayer extends React.Component<Props, State> {
     if (lastAction === 'replace') {
       return {
         ...prevState,
-        displayChildren: prevState.displayChildren.concat(nextProps.children), // length가 1일때만 조정하면 불필요한 로직일듯?
-        disappearChild: nextProps.children,
+        displayChildren: prevState.displayChildren.concat(nextProps.children),
+        disappearChild: prevState.displayChildren[prevState.displayChildren.length - 1] || null,
       };
     }
 

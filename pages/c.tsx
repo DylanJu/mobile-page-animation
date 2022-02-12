@@ -18,7 +18,7 @@ const C: FC = () => {
   };
 
   return (
-    <div>
+    <div className="page-wrapper">
       <h1>C page</h1>
       <button type="button" onClick={onPushClick}>
         push

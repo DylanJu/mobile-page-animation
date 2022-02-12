@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { styled } from '@stitches/react';
-import type { TransitionStage } from './TransitionLayout';
+
+type TransitionStage = 'none' | 'right' | 'center' | 'left';
 
 interface Props {
   type: 'back' | 'replace';
@@ -8,10 +9,10 @@ interface Props {
 }
 
 const Disappear: FC<Props> = ({ children, type, onTransitionEnd }) => {
-  const [transitionStage, setTransitionStage] = useState<TransitionStage>(() => (type === 'back' ? 'center' : 'right'));
+  const [transitionStage, setTransitionStage] = useState<TransitionStage>('center');
 
   useEffect(() => {
-    setTransitionStage(type === 'back' ? 'right' : 'center');
+    setTransitionStage(type === 'back' ? 'right' : 'left');
   }, []);
 
   return (
