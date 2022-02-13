@@ -56,7 +56,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:177762f86ac1821f9f14dd2f325454422e2576fddea46b7657bf19a72e300c2622bdccd364112a82d8f8af52cacc0536f3d44fc75bbae6efc32f30076d5ea5e9#npm:17.0.2"],
             ["recoil", "virtual:177762f86ac1821f9f14dd2f325454422e2576fddea46b7657bf19a72e300c2622bdccd364112a82d8f8af52cacc0536f3d44fc75bbae6efc32f30076d5ea5e9#npm:0.5.2"],
-            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"]
+            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"],
+            ["vconsole", "npm:3.11.2"],
+            ["xwiper", "npm:2.2.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -1634,6 +1636,33 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["convert-source-map", "npm:1.7.0"],
             ["safe-buffer", "npm:5.1.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["cookie-storage", [
+        ["npm:6.1.0", {
+          "packageLocation": "./.yarn/cache/cookie-storage-npm-6.1.0-a0eef5da44-15b6ca0873.zip/node_modules/cookie-storage/",
+          "packageDependencies": [
+            ["cookie-storage", "npm:6.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["copy-text-to-clipboard", [
+        ["npm:3.0.1", {
+          "packageLocation": "./.yarn/cache/copy-text-to-clipboard-npm-3.0.1-cf7504b96b-4c301b9a65.zip/node_modules/copy-text-to-clipboard/",
+          "packageDependencies": [
+            ["copy-text-to-clipboard", "npm:3.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["core-js", [
+        ["npm:3.21.0", {
+          "packageLocation": "./.yarn/unplugged/core-js-npm-3.21.0-9d2e98b782/node_modules/core-js/",
+          "packageDependencies": [
+            ["core-js", "npm:3.21.0"]
           ],
           "linkType": "HARD",
         }]
@@ -3986,7 +4015,9 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:17.0.2"],
             ["react-dom", "virtual:177762f86ac1821f9f14dd2f325454422e2576fddea46b7657bf19a72e300c2622bdccd364112a82d8f8af52cacc0536f3d44fc75bbae6efc32f30076d5ea5e9#npm:17.0.2"],
             ["recoil", "virtual:177762f86ac1821f9f14dd2f325454422e2576fddea46b7657bf19a72e300c2622bdccd364112a82d8f8af52cacc0536f3d44fc75bbae6efc32f30076d5ea5e9#npm:0.5.2"],
-            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"]
+            ["typescript", "patch:typescript@npm%3A4.5.2#~builtin<compat/typescript>::version=4.5.2&hash=493e53"],
+            ["vconsole", "npm:3.11.2"],
+            ["xwiper", "npm:2.2.1"]
           ],
           "linkType": "SOFT",
         }]
@@ -4010,6 +4041,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/ms-npm-2.1.3-81ff3cfac1-aa92de6080.zip/node_modules/ms/",
           "packageDependencies": [
             ["ms", "npm:2.1.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["mutation-observer", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/mutation-observer-npm-1.0.3-fa3b236d74-6b550215af.zip/node_modules/mutation-observer/",
+          "packageDependencies": [
+            ["mutation-observer", "npm:1.0.3"]
           ],
           "linkType": "HARD",
         }]
@@ -5823,6 +5863,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["vconsole", [
+        ["npm:3.11.2", {
+          "packageLocation": "./.yarn/cache/vconsole-npm-3.11.2-19eaa6438a-7715c54486.zip/node_modules/vconsole/",
+          "packageDependencies": [
+            ["vconsole", "npm:3.11.2"],
+            ["cookie-storage", "npm:6.1.0"],
+            ["copy-text-to-clipboard", "npm:3.0.1"],
+            ["core-js", "npm:3.21.0"],
+            ["mutation-observer", "npm:1.0.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["vm-browserify", [
         ["npm:1.1.2", {
           "packageLocation": "./.yarn/cache/vm-browserify-npm-1.1.2-f96404b36f-10a1c50aab.zip/node_modules/vm-browserify/",
@@ -5936,6 +5989,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/xtend-npm-4.0.2-7f2375736e-ac5dfa738b.zip/node_modules/xtend/",
           "packageDependencies": [
             ["xtend", "npm:4.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["xwiper", [
+        ["npm:2.2.1", {
+          "packageLocation": "./.yarn/cache/xwiper-npm-2.2.1-596a603fc3-8e006a1413.zip/node_modules/xwiper/",
+          "packageDependencies": [
+            ["xwiper", "npm:2.2.1"]
           ],
           "linkType": "HARD",
         }]

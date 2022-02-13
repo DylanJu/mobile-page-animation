@@ -1,5 +1,7 @@
 import React, { ReactNode } from 'react';
 import { withRouter, NextRouter } from 'next/router';
+import Xwiper from 'xwiper';
+
 import { styled } from '@stitches/react';
 import MemoPage from './MemoPage';
 import Disappear from './Disappear';
@@ -22,6 +24,8 @@ let lastAction: RouterAction = 'replace'; // 첫 페이지로 들어올 경우 r
 
 let currentIdx = 0;
 
+let isSwiped = false;
+
 class MemoLayer extends React.Component<Props, State> {
   // eslint-disable-next-line react/state-in-constructor
   state: State = {
@@ -43,10 +47,11 @@ class MemoLayer extends React.Component<Props, State> {
     }
 
     if (lastAction === 'back') {
+      console.log('children length', prevState.displayChildren.length);
       return {
         ...prevState,
         displayChildren: prevState.displayChildren.slice(0, -1),
-        disappearChild: prevState.displayChildren[prevState.displayChildren.length - 1],
+        disappearChild: isSwiped ? null : prevState.displayChildren[prevState.displayChildren.length - 1],
       };
     }
 
@@ -73,9 +78,22 @@ class MemoLayer extends React.Component<Props, State> {
         return target.apply(thisArg, argArray as any);
       },
     });
+
+    const xwiper = new Xwiper('body');
+    xwiper.onSwipeLeft(() => {
+      isSwiped = true;
+      setTimeout(() => {
+        isSwiped = false;
+      }, 200);
+    });
   }
 
   handleTransitionEnd() {
+    if (isSwiped) {
+      isSwiped = false;
+      return;
+    }
+
     if (lastAction === 'replace') {
       this.setState((prev) => ({
         ...prev,
@@ -97,7 +115,13 @@ class MemoLayer extends React.Component<Props, State> {
       <Layout>
         {this.state.displayChildren.map((child, i) => {
           return (
-            <MemoPage key={i.toString()} lastAction={lastAction} index={i} length={this.state.displayChildren.length}>
+            <MemoPage
+              key={i.toString()}
+              lastAction={lastAction}
+              index={i}
+              length={this.state.displayChildren.length}
+              isSwiped={isSwiped}
+            >
               <h1>{i}</h1>
               {child}
             </MemoPage>

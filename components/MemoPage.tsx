@@ -6,14 +6,19 @@ export interface Props {
   lastAction: RouterAction;
   index: number;
   length: number;
+  isSwiped: boolean;
 }
 
 type TransitionStage = 'none' | 'right' | 'center' | 'left';
 
-const MemoPage: FC<Props> = ({ children, lastAction, index, length }) => {
+const MemoPage: FC<Props> = ({ children, lastAction, index, length, isSwiped }) => {
   const [transitionStage, setTransitionStage] = useState<TransitionStage>('right');
 
   useEffect(() => {
+    if (isSwiped) {
+      // return;
+    }
+
     if (lastAction === 'push') {
       if (transitionStage === 'right') {
         setTransitionStage('center');
@@ -27,6 +32,7 @@ const MemoPage: FC<Props> = ({ children, lastAction, index, length }) => {
         setTransitionStage('center');
       }
     } else if (lastAction === 'back') {
+      console.log('length: ', length, ' / index: ', index, ' / isSwpied: ', isSwiped);
       if (transitionStage === 'center') {
         setTransitionStage('right');
       } else if (transitionStage === 'left') {
@@ -37,7 +43,11 @@ const MemoPage: FC<Props> = ({ children, lastAction, index, length }) => {
     }
   }, [length, children]);
 
-  return <Box transitionStage={transitionStage}>{children}</Box>;
+  return (
+    <Box transitionStage={transitionStage} isSwiped={isSwiped}>
+      {children}
+    </Box>
+  );
 };
 
 const Box = styled('div', {
@@ -63,6 +73,11 @@ const Box = styled('div', {
       },
       left: {
         transform: 'translateX(-100%)',
+      },
+    },
+    isSwiped: {
+      true: {
+        transition: 'none',
       },
     },
   },

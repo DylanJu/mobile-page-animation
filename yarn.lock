@@ -1269,10 +1269,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cookie-storage@npm:^6.1.0":
+  version: 6.1.0
+  resolution: "cookie-storage@npm:6.1.0"
+  checksum: 15b6ca08737b72e7639510b01b73c96501ac307d6a48bb452c80287a3b899d7cbbeb9bbf3219a04897efeb1dc844c12aa85223289ed748d79ed459d24ff54a51
+  languageName: node
+  linkType: hard
+
+"copy-text-to-clipboard@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "copy-text-to-clipboard@npm:3.0.1"
+  checksum: 4c301b9a65c8bf337e26a74d28849096651697fac829a364c463df81ba5ddfeea0741214f9f1232832fffd229ebd5659d3abcccea3fe54d7010a22e515cc38bc
+  languageName: node
+  linkType: hard
+
 "core-js-pure@npm:^3.19.0":
   version: 3.19.1
   resolution: "core-js-pure@npm:3.19.1"
   checksum: b6d593ce2ac9da1adf8da3efc0b9cca8cc969d7d758c511db877a41d92216dbdf7a2341f89c07516bf0da1ce8b994e103f604ab37ca31379a35512c05d291804
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.11.0":
+  version: 3.21.0
+  resolution: "core-js@npm:3.21.0"
+  checksum: 87df49aa2c5d0a521c52102b6669842dd30b334742e86dd4e0173c51230bc48d610060ab6de0f149766d188325b8c1b84598f901cf455674fe6c03ccc5c8026f
   languageName: node
   linkType: hard
 
@@ -3207,6 +3228,8 @@ __metadata:
     react-dom: 17.0.2
     recoil: ^0.5.2
     typescript: ^4.5.2
+    vconsole: ^3.11.2
+    xwiper: ^2.2.1
   languageName: unknown
   linkType: soft
 
@@ -3228,6 +3251,13 @@ __metadata:
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
+  languageName: node
+  linkType: hard
+
+"mutation-observer@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "mutation-observer@npm:1.0.3"
+  checksum: 6b550215af970471ec900a6c89397d032c49d13d402e1c93c3cb9b0324c49a2628f6a06839106075a005d640305d250b80f2960c27b2a379055f5bc54851c35e
   languageName: node
   linkType: hard
 
@@ -4807,6 +4837,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"vconsole@npm:^3.11.2":
+  version: 3.11.2
+  resolution: "vconsole@npm:3.11.2"
+  dependencies:
+    cookie-storage: ^6.1.0
+    copy-text-to-clipboard: ^3.0.1
+    core-js: ^3.11.0
+    mutation-observer: ^1.0.3
+  checksum: 7715c544867c545d895727dc29c7924c5636e80372b057f3672ef88df0050f0b6a619dc19826334bc17d4decd2dcd5a0e382bcfeda15b37c8c34189f86cc3944
+  languageName: node
+  linkType: hard
+
 "vm-browserify@npm:1.1.2":
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
@@ -4907,6 +4949,13 @@ __metadata:
   version: 4.0.2
   resolution: "xtend@npm:4.0.2"
   checksum: ac5dfa738b21f6e7f0dd6e65e1b3155036d68104e67e5d5d1bde74892e327d7e5636a076f625599dc394330a731861e87343ff184b0047fef1360a7ec0a5a36a
+  languageName: node
+  linkType: hard
+
+"xwiper@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "xwiper@npm:2.2.1"
+  checksum: 8e006a14139ad2e218d494a830a77cbca7e62a1ef9b9a3023d8203ca65691119f4033bda84de2e777c6931926d4098fde87621dbbdc7f7d04f67f41909d2f1ef
   languageName: node
   linkType: hard
 

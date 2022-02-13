@@ -4,6 +4,12 @@ import { RecoilRoot } from 'recoil';
 import '../styles/globals.css';
 import MemoLayer from '../components/MemoLayer';
 
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  const VConsole = require('vconsole');
+  const vConsole = new VConsole();
+}
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
