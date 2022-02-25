@@ -1,6 +1,18 @@
-import { FC, useState, useEffect, ReactNode } from 'react';
+import { FC, useState, useEffect, createContext } from 'react';
 import { styled } from '@stitches/react';
 import type { RouterAction } from './MemoLayer';
+
+const CurrentScreenContext = createContext<{
+  isTop: boolean;
+  setIsTop: () => void;
+  isRoot: boolean;
+  setIsRoot: () => void;
+}>({
+  isTop: true,
+  setIsTop: () => {},
+  isRoot: true,
+  setIsRoot: () => {},
+});
 
 export interface Props {
   lastAction: RouterAction;
