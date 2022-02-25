@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 import { withRouter, NextRouter } from 'next/router';
-// import Xwiper from 'xwiper';
+import Xwiper from 'xwiper';
 
 import { styled } from '@stitches/react';
 import AnimationPage from './AnimationPage';
@@ -79,13 +79,13 @@ class AnimationLayer extends React.Component<Props, State> {
       },
     });
 
-    // const xwiper = new Xwiper('body');
-    // xwiper.onSwipeLeft(() => {
-    //   isSwiped = true;
-    //   setTimeout(() => {
-    //     isSwiped = false;
-    //   }, 200);
-    // });
+    const xwiper = new Xwiper('body');
+    xwiper.onSwipeLeft(() => {
+      isSwiped = true;
+      setTimeout(() => {
+        isSwiped = false;
+      }, 200);
+    });
   }
 
   handleTransitionEnd() {

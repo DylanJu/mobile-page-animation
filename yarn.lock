@@ -186,6 +186,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@stitches/react@npm:^1.2.6":
+  version: 1.2.6
+  resolution: "@stitches/react@npm:1.2.6"
+  peerDependencies:
+    react: ">= 16.3.0"
+  checksum: 416088cdde17a22d6cdb04cf1cf756c6e5fc291dd7e41f82ce422bb95432ad32b6d990e7264d996d367c40bbc674d61be087e4e1f7b23eea7f81ef6266373a9c
+  languageName: node
+  linkType: hard
+
 "@types/json-schema@npm:^7.0.9":
   version: 7.0.9
   resolution: "@types/json-schema@npm:7.0.9"
@@ -1649,6 +1658,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "mobile-page-animation@workspace:."
   dependencies:
+    "@stitches/react": ^1.2.6
     "@types/node": 17.0.21
     "@types/react": 17.0.39
     "@typescript-eslint/eslint-plugin": ^5.12.1
@@ -1669,6 +1679,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     typescript: 4.5.5
+    xwiper: ^2.2.1
   languageName: unknown
   linkType: soft
 
@@ -2464,6 +2475,13 @@ __metadata:
   version: 1.0.2
   resolution: "wrappy@npm:1.0.2"
   checksum: 159da4805f7e84a3d003d8841557196034155008f817172d4e986bd591f74aa82aa7db55929a54222309e01079a65a92a9e6414da5a6aa4b01ee44a511ac3ee5
+  languageName: node
+  linkType: hard
+
+"xwiper@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "xwiper@npm:2.2.1"
+  checksum: 8e006a14139ad2e218d494a830a77cbca7e62a1ef9b9a3023d8203ca65691119f4033bda84de2e777c6931926d4098fde87621dbbdc7f7d04f67f41909d2f1ef
   languageName: node
   linkType: hard
 

@@ -33,6 +33,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@stitches/react", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:1.2.6"],\
             ["@types/node", "npm:17.0.21"],\
             ["@types/react", "npm:17.0.39"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:5.12.1"],\
@@ -52,7 +53,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:17.0.2"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
+            ["xwiper", "npm:2.2.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -271,6 +273,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@rushstack-eslint-patch-npm-1.1.0-49ab40dc81-4602c23454.zip/node_modules/@rushstack/eslint-patch/",\
           "packageDependencies": [\
             ["@rushstack/eslint-patch", "npm:1.1.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@stitches/react", [\
+        ["npm:1.2.6", {\
+          "packageLocation": "./.yarn/cache/@stitches-react-npm-1.2.6-a7b2da8f9b-416088cdde.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "npm:1.2.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:1.2.6", {\
+          "packageLocation": "./.yarn/__virtual__/@stitches-react-virtual-4b199d8158/0/cache/@stitches-react-npm-1.2.6-a7b2da8f9b-416088cdde.zip/node_modules/@stitches/react/",\
+          "packageDependencies": [\
+            ["@stitches/react", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:1.2.6"],\
+            ["@types/react", "npm:17.0.39"],\
+            ["react", "npm:17.0.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/react",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2218,6 +2242,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["mobile-page-animation", "workspace:."],\
+            ["@stitches/react", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:1.2.6"],\
             ["@types/node", "npm:17.0.21"],\
             ["@types/react", "npm:17.0.39"],\
             ["@typescript-eslint/eslint-plugin", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:5.12.1"],\
@@ -2237,7 +2262,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.5.1"],\
             ["react", "npm:17.0.2"],\
             ["react-dom", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:17.0.2"],\
-            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"],\
+            ["xwiper", "npm:2.2.1"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -3146,6 +3172,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-159da4805f.zip/node_modules/wrappy/",\
           "packageDependencies": [\
             ["wrappy", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["xwiper", [\
+        ["npm:2.2.1", {\
+          "packageLocation": "./.yarn/cache/xwiper-npm-2.2.1-596a603fc3-8e006a1413.zip/node_modules/xwiper/",\
+          "packageDependencies": [\
+            ["xwiper", "npm:2.2.1"]\
           ],\
           "linkType": "HARD"\
         }]\
