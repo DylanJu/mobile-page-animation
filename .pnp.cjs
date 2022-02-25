@@ -37,7 +37,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.39"],\
             ["eslint", "npm:8.9.0"],\
             ["react", "npm:17.0.2"],\
-            ["react-dom", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:17.0.2"]\
+            ["react-dom", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:17.0.2"],\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -765,7 +766,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react", "npm:17.0.39"],\
             ["eslint", "npm:8.9.0"],\
             ["react", "npm:17.0.2"],\
-            ["react-dom", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:17.0.2"]\
+            ["react-dom", "virtual:fce677f48ee009a74be5c0dab9fc2bb91111e7318605a5fbdf947602a2d6d9664180ea7c8a7e0c43129498e4d121c24c5dd13c89e5f1903c070ca95490974096#npm:17.0.2"],\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -1015,6 +1017,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/type-fest-npm-0.20.2-b36432617f-4fb3272df2.zip/node_modules/type-fest/",\
           "packageDependencies": [\
             ["type-fest", "npm:0.20.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["typescript", [\
+        ["patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367", {\
+          "packageLocation": "./.yarn/cache/typescript-patch-1413b5712d-858c61fa63.zip/node_modules/typescript/",\
+          "packageDependencies": [\
+            ["typescript", "patch:typescript@npm%3A4.5.5#~builtin<compat/typescript>::version=4.5.5&hash=bda367"]\
           ],\
           "linkType": "HARD"\
         }]\
